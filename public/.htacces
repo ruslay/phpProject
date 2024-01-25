@@ -1,3 +1,0 @@
-ErrorDocument 500 "Sorry, our script crashed. Oh dear"
-RewriteEngine On
-RewriteRule (.*) index.php?$1
