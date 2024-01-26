@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn Git</title>
-</head>
-<body>
-    
-</body>
-</html>
+<?php
+
+require dirname(__DIR__) . '/vendor/autoload.php';
+
+define('BASE_PATH', dirname(__DIR__));
+
+use App\Controllers\Router;
+
+$router = new Router();
+
+$router->handler($_SERVER);
