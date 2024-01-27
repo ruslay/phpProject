@@ -10,8 +10,16 @@ class AboutController
         $this->sayHello();
     }
 
-    private function sayHello()
+    public function sayHello()
     {
-        echo "Hello, this is AboutController";
+        $view = BASE_PATH . '/App/views/about.php';
+
+        ob_start();
+
+        include_once $view;
+
+        $content = ob_get_clean();
+
+        $layout = include_once LAYOUT;
     }
 }

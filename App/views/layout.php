@@ -6,6 +6,6 @@
     <title>Learn Git</title>
 </head>
 <body>
-    <h1>GITHUB Rep</h1>
+    <?=$content?>
 </body>
 </html>

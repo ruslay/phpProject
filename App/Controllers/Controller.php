@@ -7,11 +7,19 @@ class Controller
 {
     function index()
     {
-        $this->sayHello();
+        return $this->sayHello();
     }
 
-    private function sayHello()
+    public function sayHello()
     {
-        echo "Hello, this is Controller";
+        $view = BASE_PATH . '/App/views/main.php';
+
+        ob_start();
+
+        include_once $view;
+
+        $content = ob_get_clean();
+
+        $layout = include_once LAYOUT;
     }
 }
