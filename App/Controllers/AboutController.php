@@ -26,7 +26,7 @@ class AboutController
 
         
         $title = "Git aducation about";
-        $decs = "Git aducation - about";
+        $desc = "Git aducation - about";
 
         $layout = include_once LAYOUT;
     }

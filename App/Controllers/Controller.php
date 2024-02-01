@@ -15,7 +15,7 @@ class Controller
         $view = BASE_PATH . '/App/views/main.php';
 
         $title = "Git aducation";
-        $decs = "Git aducation - lesson five";
+        $desc = "Git aducation - lesson five";
 
         ob_start();
 
