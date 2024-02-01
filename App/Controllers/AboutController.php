@@ -25,8 +25,8 @@ class AboutController
         $content = ob_get_clean();
 
         
-        $title = "Git aducation";
-        $decs = "Git aducation - lesson five";
+        $title = "Git aducation about";
+        $decs = "Git aducation - about";
 
         $layout = include_once LAYOUT;
     }
