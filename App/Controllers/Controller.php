@@ -14,6 +14,9 @@ class Controller
     {
         $view = BASE_PATH . '/App/views/main.php';
 
+        $title = "Git aducation";
+        $decs = "Git aducation - lesson five";
+
         ob_start();
 
         include_once $view;

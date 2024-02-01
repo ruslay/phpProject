@@ -5,6 +5,8 @@ namespace App\Controllers;
 
 class AboutController
 {
+
+
     function index()
     {
         $this->sayHello();
@@ -14,11 +16,17 @@ class AboutController
     {
         $view = BASE_PATH . '/App/views/about.php';
 
+
+
         ob_start();
 
         include_once $view;
 
         $content = ob_get_clean();
+
+        
+        $title = "Git aducation";
+        $decs = "Git aducation - lesson five";
 
         $layout = include_once LAYOUT;
     }
